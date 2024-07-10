@@ -12,7 +12,7 @@
     }
   </style>
 
-<h5 class="sigma">Game Unblocked by AUGames. If the screen is black its still loading.</h5>
+<h1 class="sigma">Game Unblocked by AUGames. If the screen is black its still loading.</h1>
 
 <div class="floating" id="moreg" style="position:fixed; top: 30%; left: 0px; z-index: 10"><a target="_blank" href="https://sites.google.com/view/augames" title="More unblocked games"><img
   src="aug.png" width="90" height="90"
@@ -22,6 +22,13 @@
  <script src="UnityProgress.js"></script> <script src="
  UnityLoader.js"></script> <script> var gameInstance = UnityLoader.instantiate("gameContainer", "get.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}}); </script> </head> <body style="overflow:hidden;"> <div class="webgl-content"> <div id="gameContainer" style="width: 100%; height: 100%; margin: auto;"></div> </div> <!-- Firebase App (the core Firebase SDK) is always required and must be listed first --> <script src="firebase-app.js"></script> <!-- Add Firebase products that you want to use --> <script src="firebase-auth.js"></script> <script src="firebase-firestore.js"></script> <script src="firebase-remote-config.js"></script> <script src="firebase.js"></script> <script src="login.js"></script> <script src="firebase-config.js"></script>
  <script src="js/analytics_aug.js"></script>
+ <script>
+  setTimeout(function() {
+      var header = document.querySelector('h1.sigma');
+      if (header) {
+          header.remove();
+      }
+  }, 15000); // 60000 milliseconds = 60 seconds</script>
  <!--<script src="js/ubg235_client_v1_2.js"></script> removed ubg spyware :D -AUGPatch -->
  <!--
  ______     __  __     ______     ______     __    __     ______     ______    
